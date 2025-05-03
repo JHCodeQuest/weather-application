@@ -1,0 +1,63 @@
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css');
+
+:root {
+    --primary-color: #4e73df;
+    --secondary-color: #f8f9fc;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to bottom, #a1c4fd, #c2e9fb);
+    margin: 0;
+    padding: 0;
+}
+
+.weather-icon {
+    font-size: 48px;
+    color: black;
+    animation: float 3s ease-in-out infinite;
+    margin-bottom: 10px;
+}
+
+@keyframes float {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-10px); }
+    100% { transform: translateY(0px); }
+}
+
+.weather-container {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+h1 {
+    color: var(--primary-color);
+}
+
+.location {
+    margin-bottom: 20px;
+}
+
+.location button {
+    background-color: #4e73df;
+    color: white;
+    font-size: 16px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.weather-info {
+    font-size: 18px;
+    color: #333;
+}
+
+.weather-info p {
+    font-size: 20px;
+}
+
+.weather-info .temp {
+    font-size: 40px;
+    color: var(--primary-color);
+}
